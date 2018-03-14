@@ -15,5 +15,8 @@ attr_reader :word, :display
     return "*" * @word.length
   end
 
+  def letter_in_guess(guessed_letter)
+    return @word.include?(guessed_letter)
+  end
 
 end
