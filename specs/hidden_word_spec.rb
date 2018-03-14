@@ -14,7 +14,7 @@ class TestHidden_Word < MiniTest::Test
   end
 
   def test_of_hidden_word_creation__no_space
-    display_word_given = @hidden_word1.display
+    display_word_given = @hidden_word1.display()
     word_given = @hidden_word1.word()
     assert_equal(@word1, word_given)
     assert_equal("*****", display_word_given)
